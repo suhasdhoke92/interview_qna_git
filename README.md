@@ -46,14 +46,15 @@
 
 9. ### How do you combine multiple commits into a single commit?  
    - Using interactive rebasing:  
-   ```
+     ```bash
      git rebase -i HEAD~3
-   ```
-     # Change "pick" to "squash" on the commits you want to combine
-     # Edit the commit message to summarize changes
-   ```
-   git log
-   ```
+     ```
+   - Change "pick" to "squash" on the commits you want to combine.
+   - Edit the commit message to summarize changes.
+   - Save and close the editor to complete the rebase.
+     ```bash
+     git log
+     ```
 
 11. ### What are your 10 commonly used Git commands?  
     `git clone`, `git status`, `git add`, `git commit -m`, `git push`, `git pull`, `git checkout`, `git branch -a`, `git fetch`, `git merge`, `git rebase`, `git log`.
